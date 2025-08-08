@@ -1,0 +1,212 @@
+/* Shades of Green Color Palette - Dark Theme */
+:root {
+  --green-50: #f0fdf4;
+  --green-100: #dcfce7;
+  --green-200: #bbf7d0;
+  --green-300: #86efac;
+  --green-400: #4ade80;
+  --green-500: #22c55e;
+  --green-600: #16a34a;
+  --green-700: #15803d;
+  --green-800: #166534;
+  --green-900: #14532d;
+  --green-950: #052e16;
+
+  /* Dark theme colors */
+  --dark-bg: #0f172a;
+  --dark-surface: #1e293b;
+  --dark-surface-2: #334155;
+  --dark-text: #f1f5f9;
+  --dark-text-secondary: #cbd5e1;
+  --dark-border: #475569;
+
+  --gray-50: #f9fafb;
+  --gray-100: #f3f4f6;
+  --gray-200: #e5e7eb;
+  --gray-300: #d1d5db;
+  --gray-400: #9ca3af;
+  --gray-500: #6b7280;
+  --gray-600: #4b5563;
+  --gray-700: #374151;
+  --gray-800: #1f2937;
+  --gray-900: #111827;
+}
+
+body {
+  background: linear-gradient(
+    135deg,
+    var(--dark-bg) 0%,
+    #1a365d 50%,
+    var(--dark-surface) 100%
+  );
+  min-height: 100vh;
+  color: var(--dark-text);
+}
+
+.main {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  min-height: 100vh;
+  position: relative;
+}
+
+/* Header Section */
+.header {
+  margin-bottom: 30px;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.greeting h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--dark-text);
+  margin-bottom: 8px;
+  font-family: "Poppins", "Inter", "Segoe UI", sans-serif;
+  line-height: 1.3;
+}
+
+.date-time {
+  color: var(--dark-text-secondary);
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+/* Input Section */
+.input-container {
+  margin-bottom: 30px;
+}
+
+.input-bar {
+  display: flex;
+  align-items: center;
+  background: var(--dark-surface-2);
+  border-radius: 16px;
+  padding: 4px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  border: 1px solid var(--dark-border);
+}
+
+.task-input {
+  flex: 1;
+  padding: 16px 20px;
+  font-size: 16px;
+  border: none;
+  background: transparent;
+  color: var(--dark-text);
+  font-family: inherit;
+}
+
+.task-input::placeholder {
+  color: var(--gray-400);
+}
+
+.task-input:focus {
+  outline: none;
+}
+
+.add-btn {
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, var(--green-500), var(--green-600));
+  border: none;
+  border-radius: 12px;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.add-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(34, 197, 94, 0.4);
+}
+
+/* Task List */
+.task-list {
+  margin-bottom: 30px;
+}
+
+.task-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.task-list li {
+  margin-bottom: 16px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.task-list li:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .main {
+    max-width: 100%;
+    padding: 15px;
+  }
+
+  .greeting h2 {
+    font-size: 1.8rem;
+  }
+
+  .task-input {
+    padding: 14px 16px;
+  }
+
+  .add-btn {
+    width: 45px;
+    height: 45px;
+  }
+}
+
+/* Scrollbar personalizada */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--dark-surface);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--green-600);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--green-500);
+}
+
+/* Seleção de texto personalizada */
+::selection {
+  background: var(--green-200);
+  color: var(--green-900);
+}
+
+/* Loading state para botões */
+.btn-primary:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Efeito de foco para acessibilidade */
+.btn:focus,
+.lg-text-input:focus,
+.sm-text-input:focus {
+  outline: 2px solid var(--green-500);
+  outline-offset: 2px;
+}

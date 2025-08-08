@@ -4,7 +4,7 @@ import { provideClientHydration, withEventReplay } from '@angular/platform-brows
 export const appConfig: ApplicationConfig = {
   providers: [
     provideBrowserGlobalErrorListeners(),
-    provideZonelessChangeDetection(), provideClientHydration(withEventReplay()),
-    
+    provideZonelessChangeDetection(),
+    provideClientHydration(withEventReplay()),
   ]
 };
