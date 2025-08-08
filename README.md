@@ -1,59 +1,140 @@
-# TODOapp
+# 🌱 TODO List App
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.1.5.
+Uma aplicação moderna de lista de tarefas desenvolvida em Angular 20 com tema escuro e paleta de cores verde.
 
-## Development server
+## ✨ Características
 
-To start a local development server, run:
+- **🎨 Design Moderno**: Interface limpa com tema escuro
+- **🌿 Paleta Verde**: Tons de verde harmoniosos
+- **📱 Responsivo**: Funciona perfeitamente em mobile e desktop
+- **⚡ Performance**: Angular 20 com control flow otimizado
+- **🎯 Funcionalidades**: Adicionar, editar, marcar e remover tarefas
 
+## 🚀 Tecnologias Utilizadas
+
+- **Angular 20**: Framework principal
+- **TypeScript**: Linguagem de programação
+- **CSS3**: Estilos modernos com gradientes e animações
+- **HTML5**: Estrutura semântica
+
+## 📋 Funcionalidades
+
+### ✅ Gerenciamento de Tarefas
+- **Adicionar** novas tarefas
+- **Editar** descrição das tarefas
+- **Marcar** como concluída
+- **Remover** tarefas da lista
+
+### 🎨 Interface
+- **Tema escuro** com gradientes
+- **Animações suaves** em hover e clique
+- **Checkbox personalizada** com borda
+- **Layout responsivo** para todos os dispositivos
+
+## 🛠️ Como Executar
+
+### Pré-requisitos
+- Node.js (versão 18 ou superior)
+- npm ou yarn
+
+### Instalação
+
+1. **Clone o repositório**
 ```bash
-ng serve
+git clone https://github.com/seu-usuario/todo-list-app.git
+cd todo-list-app
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
+2. **Instale as dependências**
 ```bash
-ng generate component component-name
+npm install
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
+3. **Execute o projeto**
 ```bash
-ng generate --help
+npm start
 ```
 
-## Building
-
-To build the project run:
-
-```bash
-ng build
+4. **Acesse no navegador**
+```
+http://localhost:4200
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+## 📁 Estrutura do Projeto
 
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
+```
+src/
+├── app/
+│   ├── item/                 # Componente de item individual
+│   │   ├── item.ts          # Lógica do componente
+│   │   ├── item.html        # Template
+│   │   └── item.css         # Estilos do componente
+│   ├── app.ts               # Componente principal
+│   ├── app.html             # Template principal
+│   ├── app.css              # Estilos principais
+│   ├── tarefas.ts           # Modelo de dados
+│   └── app.config.ts        # Configuração da aplicação
+├── index.html               # HTML principal
+├── styles.css               # Estilos globais
+└── main.ts                  # Ponto de entrada
 ```
 
-## Running end-to-end tests
+## 🎨 Paleta de Cores
 
-For end-to-end (e2e) testing, run:
+### Verde (Tema Principal)
+- `#22c55e` - Verde principal
+- `#16a34a` - Verde escuro
+- `#15803d` - Verde mais escuro
+- `#4ade80` - Verde claro
+
+### Escuro (Tema de Fundo)
+- `#0f172a` - Background principal
+- `#1e293b` - Surface
+- `#334155` - Surface secundário
+- `#475569` - Bordas
+
+## 📱 Responsividade
+
+A aplicação é totalmente responsiva e funciona em:
+- 📱 **Mobile**: 320px - 768px
+- 💻 **Desktop**: 769px+
+
+## 🔧 Scripts Disponíveis
 
 ```bash
-ng e2e
+# Desenvolvimento
+npm start          # Inicia servidor de desenvolvimento
+npm run build      # Gera build de produção
+npm run watch      # Build em modo watch
+npm test           # Executa testes
+
+# Produção
+npm run build      # Build otimizado
 ```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+## 🤝 Contribuindo
 
-## Additional Resources
+1. Faça um fork do projeto
+2. Crie uma branch para sua feature (`git checkout -b feature/AmazingFeature`)
+3. Commit suas mudanças (`git commit -m 'Add some AmazingFeature'`)
+4. Push para a branch (`git push origin feature/AmazingFeature`)
+5. Abra um Pull Request
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## 📄 Licença
+
+Este projeto está sob a licença MIT. Veja o arquivo `LICENSE` para mais detalhes.
+
+## 👨‍💻 Autor
+
+**Leonardo Nunes**
+- GitHub: [@seu-usuario](https://github.com/seu-usuario)
+
+## 🙏 Agradecimentos
+
+- Angular Team pelo framework incrível
+- Comunidade Angular pela documentação e suporte
+- Google Fonts pela fonte Poppins
+
+---
+
+⭐ **Se este projeto te ajudou, considere dar uma estrela!**
