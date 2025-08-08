@@ -41,7 +41,7 @@ Uma aplicação moderna de lista de tarefas desenvolvida em Angular 20 com tema 
 
 1. **Clone o repositório**
 ```bash
-git clone https://github.com/seu-usuario/todo-list-app.git
+git clone https://github.com/leonardonunesz/todo-list-app.git
 cd todo-list-app
 ```
 
@@ -127,7 +127,7 @@ Este projeto está sob a licença MIT. Veja o arquivo `LICENSE` para mais detalh
 ## 👨‍💻 Autor
 
 **Leonardo Nunes**
-- GitHub: [@seu-usuario](https://github.com/seu-usuario)
+- GitHub: [@leonardonunesz](https://github.com/leonardonunesz)
 
 ## 🙏 Agradecimentos
 
